@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Website</title>
+    <link rel="stylesheet" href="onepage-scroll.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="onepagescroll.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="main">
+    <section class="first_page">
+        <div class="header">
+            <h1 class="heading s1">
+                the first page
+            </h1>
+        </div>
+    </section>
+    <section class="second_page">
+        <div class="header h2">
+            <h1 class="heading s2">
+                who are <span class="we">we</span>
+            </h1>
+        </div>
+    </section>
+    <section class="third_page">
+        <div class="header">
+            <h1 class="heading s3">
+                what are our motives <span style="display: inline-block" class="qm">?</span>
+            </h1>
+        </div>
+    </section>
+    <section class="fourth_page">
+        <div class="header">
+            <h1 class="heading s4">
+                THE FOURTH PAGE
+            </h1>
+        </div>
+    </section>
+</div>
+<script>
+    onePageScroll(".main", {
+        sectionContainer: "section",
+        responsiveFallback: false,
+        animationTime: 1000,
+        loop: false,
+    });
+</script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
