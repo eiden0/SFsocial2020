@@ -3,82 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Social Website</title>
-    <link rel="stylesheet" href="onepage-scroll.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="onepagescroll.js"></script>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/onepage-scroll.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="script/onepagescroll.js"></script>
+    <script src="script/home.js"></script>
 </head>
 <body>
-<div class="main">
-    <section class="first_page">
-        <div class="header">
-            <h1 class="heading s1">
-                the first page
-            </h1>
-        </div>
-    </section>
-    <section class="second_page">
-        <div class="header h2">
-            <h1 class="heading s2">
-                Hunger Situation in <span class="we">India</span>
-            </h1>
-              <div class="grid-flex">
-                <div class="grid-flex">
-
-              <div class="wrapper">
-                <div class="zoom-effect-container">
-                  <div class="image-card">
-                      <img src="images/hunger.gif"/>
-                  </div>
-
+    <div class="header">
+        <img src="images/kgp_logo.png" />
+        <img src="images/sf_logo.png" />
+        <button onclick="fadeText()" id="home_do">What we do</button>
+        <button onclick="scrollWindow()">Contribute</button>
+    </div>
+    <div class="main">
+        <section class="first_page">
+            <img src="images/back.png" class="home_background" />
+                <div class="mainLogo">
+                    <img src="images/logo.png" class="home_logo" id="home_logo" />
+                    <img src="images/prayatn.png" class="prayatn" id="prayatn" />
                 </div>
-            
-                <div class="col col-text col-left">
-                       <div class="Aligner-item">
-                          
-
-                                    <ol class="live numbers ">
-                                      <li><b>194.4 million</b> people ie <b>14.5%</b> of our population is undernurished </li>
-                                      <li> <b>20.8%</b> of children under 5 are <b>underweight</b></li>
-                                      <li><b>37.9%</b>
-                                      of children under 5 years of age are stunted (too short for their age).</li>
-                                      <li><b>51.4%</b>
-                                      women in the reproductive age (15-49years) are anaemic</li>
-                                     
-                                    </ol>           
-                      <p style="float: right;position: relative;left: 25em">*according to FAO 2019 report</p>
-                        </div>
+                <div id="home_initiative">
+                    <h2>An initiative by</h2>
+                    <h1>SPRING FEST, IIT Kharagpur</h1>
                 </div>
-              </div>
-
-
-        </div>
-    </section>
-    <section class="third_page">
-        <div class="header">
-            <h1 class="heading s3">
-                what are our motives <span style="display: inline-block" class="qm">?</span>
-            </h1>
-        </div>
-    </section>
-    <section class="fourth_page">
-        <div class="header">
-            <h1 class="heading s4">
-                THE FOURTH PAGE
-            </h1>
-        </div>
-    </section>
-</div>
-<script>
-    onePageScroll(".main", {
-        sectionContainer: "section",
-        responsiveFallback: false,
-        animationTime: 1000,
-        loop: false,
-    });
-</script>
-<script>
-    AOS.init();
-</script>
+                <div id="what_we_do_text">
+                    &Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia autem blanditiis fugit maiores iste nihil non provident ab, laboriosam dolore, dolor placeat minus mollitia odit dolorem, illo molestiae veritatis voluptas?
+                    &Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia autem blanditiis fugit maiores iste nihil non provident ab, laboriosam dolore, dolor placeat minus mollitia odit dolorem, illo molestiae veritatis voluptas?
+                    &Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia autem blanditiis fugit maiores iste nihil non provident ab, laboriosam dolore, dolor placeat minus mollitia odit dolorem, illo molestiae veritatis voluptas?
+                </div>
+        </section>
+        <section class="second_page" id="contribute">
+            <div class="contribute_container">
+                <div class="contribute_panel">
+                    <div class="facts">
+                        <h1>FACTS</h1>
+                    </div>
+                    <div class="payment">
+                        <h1>PAYMENT</h1>
+                    </div>
+                </div>
+                <div class="contribute_footer">
+                    <img src="images/logo.png" class="logo_footer" />
+                    <img src="images/prayatn.png" class="prayatn_footer" />
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        onePageScroll(".main", {
+            sectionContainer: "section",
+            responsiveFallback: false,
+            animationTime: 1000,
+            loop: false,
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

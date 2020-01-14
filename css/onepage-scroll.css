@@ -41,20 +41,21 @@ body, .onepage-wrapper, html {
 .onepage-pagination li {
   padding: 0;
   text-align: center;
+  color: white;
 }
 .onepage-pagination li a{
   padding: 10px;
   width: 4px;
   height: 4px;
   display: block;
-  
+  color: white;  
 }
 .onepage-pagination li a:before{
   content: '';
   position: absolute;
   width: 4px;
   height: 4px;
-  background: rgba(0,0,0,0.85);
+  background: rgba(255,255,255,0.85);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -64,7 +65,8 @@ body, .onepage-wrapper, html {
   width: 10px;
   height: 10px;
   background: none;
-  border: 1px solid black;
+  border: 1px solid white;
+  background-color: white;
   margin-top: -4px;
   left: 8px;
 }
